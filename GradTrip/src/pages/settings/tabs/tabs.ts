@@ -13,4 +13,7 @@ export class TabsPage {
   settingsPage = SettingsPage;
   accountPage = AccountPage;
   infoPage = InfosPage;
+  seePage : boolean = false;
+
+  ionViewDidLoad() {this.seePage = this.accountPage.getAdmin();}
 }
