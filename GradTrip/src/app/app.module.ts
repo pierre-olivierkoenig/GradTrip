@@ -14,6 +14,7 @@ import {TabsPage} from "../pages/settings/tabs/tabs";
 import {EventsPage} from "../pages/events/events";
 import {SingleEventPage} from "../pages/events/single-event/single-event";
 import {AccountPage} from "../pages/account/account";
+import {InfosPage} from "../pages/infos/infos";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {AccountPage} from "../pages/account/account";
     SettingsPage,
     EventsPage,
     SingleEventPage,
-    AccountPage
+    AccountPage,
+    InfosPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import {AccountPage} from "../pages/account/account";
     SettingsPage,
     EventsPage,
     SingleEventPage,
-    AccountPage
+    AccountPage,
+    InfosPage
   ],
   providers: [
     StatusBar,

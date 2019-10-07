@@ -2,6 +2,7 @@ import {Component} from "@angular/core";
 import {EventsPage} from "../../events/events";
 import {SettingsPage} from "../settings";
 import {AccountPage} from "../../account/account";
+import {InfosPage} from "../../infos/infos";
 
 @Component({
   selector: 'page-tabs',
@@ -11,4 +12,5 @@ export class TabsPage {
   eventsPage = EventsPage;
   settingsPage = SettingsPage;
   accountPage = AccountPage;
+  infoPage = InfosPage;
 }
