@@ -2,10 +2,10 @@ import {Component, OnInit} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-single-appareil',
-  templateUrl: 'single-appareil.html',
+  selector: 'page-single-event',
+  templateUrl: 'single-event.html',
 })
-export class SingleAppareilPage implements OnInit{
+export class SingleEventPage implements OnInit{
 
   name :String;
 
@@ -13,6 +13,6 @@ export class SingleAppareilPage implements OnInit{
   }
 
   ngOnInit() {
-    this.name = this.navParams.get('appareilName');
+    this.name = this.navParams.get('eventName');
   }
 }

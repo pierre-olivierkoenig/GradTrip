@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavController} from "ionic-angular";
-import {AppareilsPage} from "../appareils/appareils";
+import {EventsPage} from "../events/events";
 
 @Component({
   selector: 'page-hello-ionic',
@@ -10,6 +10,6 @@ export class HelloIonicPage {
   constructor(public navCtrl: NavController) {}
 
   onGoToAppareils() {
-    this.navCtrl.push(AppareilsPage);
+    this.navCtrl.push(EventsPage);
   }
 }

@@ -9,10 +9,11 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {AppareilsPage} from "../pages/appareils/appareils";
-import {SingleAppareilPage} from "../pages/appareils/single-appareil/single-appareil";
 import {SettingsPage} from "../pages/settings/settings";
 import {TabsPage} from "../pages/settings/tabs/tabs";
+import {EventsPage} from "../pages/events/events";
+import {SingleEventPage} from "../pages/events/single-event/single-event";
+import {AccountPage} from "../pages/account/account";
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import {TabsPage} from "../pages/settings/tabs/tabs";
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    AppareilsPage,
-    SingleAppareilPage,
     TabsPage,
-    SettingsPage
+    SettingsPage,
+    EventsPage,
+    SingleEventPage,
+    AccountPage
   ],
   imports: [
     BrowserModule,
@@ -35,10 +37,11 @@ import {TabsPage} from "../pages/settings/tabs/tabs";
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    AppareilsPage,
-    SingleAppareilPage,
     TabsPage,
-    SettingsPage
+    SettingsPage,
+    EventsPage,
+    SingleEventPage,
+    AccountPage
   ],
   providers: [
     StatusBar,
