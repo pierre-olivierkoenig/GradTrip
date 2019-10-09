@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nouvel appareil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="addEvent">
+    <ion-list>
+      <ion-item-divider>Informations</ion-item-divider>
+      <ion-item>
+        <ion-label>Nom</ion-label>
+        <ion-input placeholder="Appareil" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item-divider>Description</ion-item-divider>
+      <div formArrayName="description">
+        <ion-item *ngFor="let control of getDescriptionArray().controls; let i = index"></ion-item>
+      </div>
+    </ion-list>
+  </form>
+</ion-content>
