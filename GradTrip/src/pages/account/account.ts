@@ -9,13 +9,13 @@ export class AccountPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  public admin = true;
   ionViewDidLoad() {
     console.log('ionViewDidLoad AccountPage');
   }
+}
 
-  getAdmin(){
-    return this.admin;
+export class Account{
+  constructor(public admin : boolean){
+    this.admin = admin;
   }
 }
